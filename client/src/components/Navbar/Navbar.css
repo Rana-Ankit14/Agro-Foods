@@ -1,0 +1,122 @@
+.toolbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #521751;
+  height: 60px;
+  z-index: 90;
+  text-align: left;
+}
+
+.toolbar_navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.toolbar_logo {
+  margin: 0 1rem;
+}
+
+/* search bar style */
+.toolbar_search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  width: 55%;
+}
+.searchBar input {
+  color: black !important;
+  font-size: 16px !important;
+  font-weight: 100 !important;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.toolbar_navigation_right_items ul,
+.toolbar_navigation_main_items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.toolbar_navigation_right_items ul li,
+.toolbar_navigation_main_items ul li {
+  padding: 0 0.5rem;
+}
+
+.toolbar_navigation_right_items a,
+.toolbar_navigation_main_items a {
+  color: #fff;
+  text-decoration: none;
+}
+.toolbar_navigation_right_items a:active,
+.toolbar_navigation_main_items a:active,
+.toolbar_navigation_right_items a:hover,
+.toolbar_navigation_main_items a:hover {
+  color: #fa923f;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .toolbar_navigation_main_items,
+  .toolbar_search {
+    display: none;
+  }
+
+  .toolbar_logo img {
+    padding: 8px;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .toolbar {
+    height: 85px;
+  }
+
+  .toolbar.scrolled {
+    display: flex;
+    height: 50px;
+  }
+  .toolbar.scrolled .toolbar_logo,
+  .toolbar.scrolled .toolbar_navigation_right_items {
+    display: none;
+  }
+  .toolbar .toolbar_navigation {
+    height: 50%;
+  }
+  .toolbar.scrolled .toolbar_navigation {
+    height: 100%;
+  }
+  .toolbar_mobile_search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0.5rem;
+    background-color: #521751;
+  }
+  .searchBar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rebeccapurple;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar_toggle_button,
+  .spacer,
+  .toolbar_mobile_search {
+    display: none;
+  }
+  .toolbar_logo {
+    margin-left: 0;
+  }
+}

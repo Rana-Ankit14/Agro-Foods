@@ -1,0 +1,29 @@
+.sidebar {
+  width: 100%;
+  /* max-width: 400px; */
+  /* background-color: red !important; */
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.sidebar .listItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sidebar a,
+.sidebar a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 1rem;
+}
